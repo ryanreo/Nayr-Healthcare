@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacist Dashboard - Nayr Healthcare</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, Pharmacist Tim!</h1>
+        
+        <h2>Incoming Prescriptions</h2>
+        <div id="prescriptions">
+            <!-- Prescriptions will be displayed here -->
+        </div>
+
+        <h2>Send Prescription to Patient</h2>
+        <form id="sendPrescriptionForm" action="/send-prescription-to-patient" method="POST">
+            <textarea name="prescription" placeholder="Enter prescription" required></textarea>
+            <button type="submit">Send Prescription</button>
+        </form>
+
+        <a href="/">Logout</a>
+    </div>
+
+    <script src="/js/pharmacist-dashboard.js"></script>
+</body>
+</html>

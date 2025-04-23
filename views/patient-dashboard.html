@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard - Nayr Healthcare</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Dashboard!</h1>
+        
+        <h2>Send Message to Doctor</h2>
+        <form id="messageForm" action="/send-message" method="POST">
+            <label for="doctor">Select Doctor:</label>
+            <select name="doctor" id="doctor" required>
+                <option value="Dr. Smith">Dr. Smith</option>
+                <option value="Dr. Jane">Dr. Jane</option>
+                <option value="Dr. Miles">Dr. Miles</option>
+            </select>
+            <textarea name="message" placeholder="Describe your illness" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <h2>Prescription from Pharmacist</h2>
+        <div id="prescription">
+            <!-- Prescription will be displayed here -->
+        </div>
+
+        <a href="/">Logout</a>
+    </div>
+
+    <script src="/js/patient-dashboard.js"></script>
+</body>
+</html>

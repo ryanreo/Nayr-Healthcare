@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Form - Nayr Healthcare</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Information Form</h1>
+        <form id="patientForm" action="/submit-patient-info" method="POST">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+
+            <label>Have you had surgery?</label>
+            <div>
+                <input type="radio" id="surgeryYes" name="hasSurgery" value="yes" required>
+                <label for="surgeryYes">Yes</label>
+                <input type="radio" id="surgeryNo" name="hasSurgery" value="no" required>
+                <label for="surgeryNo">No</label>
+            </div>
+
+            <label>Do you suffer from diabetes?</label>
+            <div>
+                <input type="radio" id="diabetesYes" name="hasDiabetes" value="yes" required>
+                <label for="diabetesYes">Yes</label>
+                <input type="radio" id="diabetesNo" name="hasDiabetes" value="no" required>
+                <label for="diabetesNo">No</label>
+            </div>
+
+            <label for="otherMedicalInfo">Other Medical Information:</label>
+            <textarea id="otherMedicalInfo" name="otherMedicalInfo" placeholder="Enter any other medical information"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
